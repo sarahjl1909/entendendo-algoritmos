@@ -19,7 +19,9 @@ int buscaMenor(const vector<int>& v){
 vector<int> ordenacaoPorSelecao(vector<int>& v){
     vector<int> novoV = {};
     
-    for(int i = 0; i < v.size(); i++){
+    int tam = v.size();
+    
+    for(int i = 0; i < tam; i++){
         int menor = buscaMenor(v);
         
         novoV.push_back(v[menor]);
